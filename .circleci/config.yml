@@ -71,8 +71,11 @@ workflows:
       - save_hello_world_output
           requires:
             - build
+          requires:
             - say-hello
+          requires:
             - print_hello
+          requires:
             - print_world
       - print_output_file
           requires:
